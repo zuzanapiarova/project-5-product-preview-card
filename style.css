@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@600;700&display=swap');
+
+*{
+    font-family: 'Assistant', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    background-color: rgb(252, 239, 230);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container{
+    background-color: white;
+    border-radius: 0.6em;
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    width: 600px;
+    height: 450px;
+    overflow: hidden;
+    min-width: 600px;
+}
+
+.img--wrapper{
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+
+.photo--desktop{
+    width: 100%;
+    filter: brightness(0.9);
+}
+
+.photo--mobile{
+    display: none;
+}
+
+.content{
+    padding: 32px;
+    width: 50%; 
+}
+
+.perfume{
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 0.20em;
+    color: rgb(107, 107, 107);
+    font-size: 16px;
+}
+
+.name{
+    font-family: 'Noto Nastaliq Urdu', serif;
+    line-height: 1.2em;
+    font-weight: 700;
+}
+
+p{
+    font-weight: 300;
+    letter-spacing: 0.15em;
+    color: rgb(107, 107, 107);
+    font-size: 14px;
+    margin-top: 16px;
+}
+
+.prices{
+    display: flex;
+    align-items: center;
+}
+
+.price{
+    font-family: 'Noto Nastaliq Urdu', serif;;
+    color: rgb(17, 100, 64);
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.price--old{
+    color: rgb(107, 107, 107);
+    text-decoration: line-through;
+    margin-left: 8px;
+    font-size: 14px;
+}
+
+button{
+    background-color: rgb(17, 100, 64);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 50px;
+    border-radius: 0.6em;
+    margin: 12px 0;
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button--content{
+    display: flex;
+    align-items: center;
+}
+
+.shopping-cart--icon{
+    margin-right: 8px;
+}
+
+.button--text{
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+button:hover{
+    background-color: rgb(10, 69, 24);
+}
+
+/*    PHONES    */
+
+@media screen and (max-width:480px)  {
+
+    .container{
+        min-width: 0;
+        width: 90%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .img--wrapper{
+        width: 100%;
+    }
+
+    .photo--desktop{
+        display:none;
+    }
+
+    .photo--mobile{
+        display: inline;
+        width: 100%;
+    }
+
+    .content{
+        width: 100%;
+    }
+}
