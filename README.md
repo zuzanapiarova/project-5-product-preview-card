@@ -6,7 +6,7 @@ Challenge:
 create a replica of the card in both web and mobile view
 
 My solution: 
-
+https://zuzanapiarova.github.io/project-5-product-preview-card/
 
 ### Links
 
